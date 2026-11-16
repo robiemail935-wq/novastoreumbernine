@@ -1,0 +1,106 @@
+{
+  "games": [
+    {
+      "id": "ml",
+      "name": "Mobile Legends",
+      "subtitle": "Diamonds",
+      "icon": "⚔️",
+      "packages": [
+        {
+          "id": "ml86",
+          "name": "86 Diamonds",
+          "price": 20000
+        },
+        {
+          "id": "ml172",
+          "name": "172 Diamonds",
+          "price": 39000
+        },
+        {
+          "id": "ml257",
+          "name": "257 Diamonds",
+          "price": 58000
+        },
+        {
+          "id": "ml706",
+          "name": "706 Diamonds",
+          "price": 155000
+        }
+      ]
+    },
+    {
+      "id": "ff",
+      "name": "Free Fire",
+      "subtitle": "Diamonds",
+      "icon": "🔥",
+      "packages": [
+        {
+          "id": "ff70",
+          "name": "70 Diamonds",
+          "price": 10000
+        },
+        {
+          "id": "ff140",
+          "name": "140 Diamonds",
+          "price": 20000
+        },
+        {
+          "id": "ff355",
+          "name": "355 Diamonds",
+          "price": 49000
+        },
+        {
+          "id": "ff720",
+          "name": "720 Diamonds",
+          "price": 97000
+        }
+      ]
+    },
+    {
+      "id": "pubg",
+      "name": "PUBG Mobile",
+      "subtitle": "UC",
+      "icon": "🎯",
+      "packages": [
+        {
+          "id": "pub60",
+          "name": "60 UC",
+          "price": 16000
+        },
+        {
+          "id": "pub325",
+          "name": "325 UC",
+          "price": 79000
+        },
+        {
+          "id": "pub660",
+          "name": "660 UC",
+          "price": 155000
+        }
+      ]
+    },
+    {
+      "id": "genshin",
+      "name": "Genshin Impact",
+      "subtitle": "Genesis Crystals",
+      "icon": "✧",
+      "packages": [
+        {
+          "id": "gen60",
+          "name": "60 Crystals",
+          "price": 16000
+        },
+        {
+          "id": "gen300",
+          "name": "300 + 30",
+          "price": 79000
+        },
+        {
+          "id": "gen980",
+          "name": "980 + 110",
+          "price": 249000
+        }
+      ]
+    }
+  ]
+}

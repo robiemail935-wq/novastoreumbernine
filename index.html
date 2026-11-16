@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d19">
+  <title>NOVA TOPUP — Game Credits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">N</span><span>NOVA<span class="brand-light">TOPUP</span></span></a>
+    <nav><a href="#produk">Produk</a><a href="#cara">Cara Top Up</a><a href="#bantuan">Bantuan</a></nav>
+    <a class="status" href="#produk"><i></i> Layanan aktif</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> DIGITAL GAME STORE</div>
+        <h1>Top up game.<br><em>Lebih cepat.</em> Lebih mudah.</h1>
+        <p>Pilih game, tentukan nominal, lalu buat pesanan dalam beberapa langkah sederhana.</p>
+        <a class="primary-link" href="#produk">Mulai top up <span>↗</span></a>
+        <div class="hero-meta"><span>✦ Proses simpel</span><span>✦ Tampilan responsif</span><span>✦ Pilihan fleksibel</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-core"><div class="core-icon">✦</div><strong>GAME<br>CREDITS</strong><small>POWER YOUR PLAY</small></div>
+        <span class="float-chip chip-top">DIGITAL GOODS</span><span class="float-chip chip-bottom">NOVA / 2026</span>
+      </div>
+    </section>
+
+
+    <section class="promo-section" aria-label="Banner promo">
+      <div class="promo-heading"><div><div class="eyebrow">NOVA UNIVERSE</div><h2>Power up your adventure</h2></div><span>ANIME GAME ZONE ✦</span></div>
+      <div class="promo-grid">
+        <article class="promo-banner promo-blue">
+          <div class="promo-copy"><span class="promo-tag">LIMIT BREAK / 01</span><h3>LEVEL UP<br><em>YOUR LEGEND</em></h3><p>Isi diamond dan lanjutkan petualanganmu.</p><a href="#produk">TOP UP SEKARANG ↗</a></div>
+          <div class="anime-figure figure-blue"><i class="figure-hair"></i><i class="figure-face"></i><i class="figure-coat"></i><b>✦</b></div>
+          <span class="banner-watermark">NOVA</span>
+        </article>
+        <article class="promo-banner promo-purple">
+          <div class="promo-copy"><span class="promo-tag">ENERGY AWAKEN / 02</span><h3>UNLEASH<br><em>YOUR POWER</em></h3><p>Tambah energi. Raih kemenangan berikutnya.</p><a href="#produk">PILIH GAME ↗</a></div>
+          <div class="anime-figure figure-purple"><i class="figure-hair"></i><i class="figure-face"></i><i class="figure-coat"></i><b>⚡</b></div>
+          <span class="banner-watermark">AWAKEN</span>
+        </article>
+        <article class="promo-banner promo-red">
+          <div class="promo-copy"><span class="promo-tag">BATTLE MODE / 03</span><h3>READY FOR<br><em>THE NEXT MATCH?</em></h3><p>Top up praktis untuk sesi bermainmu.</p><a href="#produk">GAS TOP UP ↗</a></div>
+          <div class="anime-figure figure-red"><i class="figure-hair"></i><i class="figure-face"></i><i class="figure-coat"></i><b>刃</b></div>
+          <span class="banner-watermark">BATTLE</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="produk">
+      <div class="section-heading"><div><div class="eyebrow">KATALOG</div><h2>Pilih produk</h2></div><span class="muted">Harga contoh · bisa diedit di products.json</span></div>
+      <div class="game-grid" id="gameGrid"></div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="section-heading"><div><div class="eyebrow">BUAT PESANAN</div><h2>Detail top up</h2></div><span class="step-label">01 — 03</span></div>
+      <div class="order-layout">
+        <div class="panel form-panel">
+          <label for="playerId">User ID / Player ID</label>
+          <input id="playerId" type="text" placeholder="Masukkan User ID" autocomplete="off">
+          <label for="serverId">Server ID <span class="optional">(opsional)</span></label>
+          <input id="serverId" type="text" placeholder="Masukkan Server ID jika ada" autocomplete="off">
+          <label>Pilih nominal</label>
+          <div class="package-grid" id="packageGrid"><div class="empty-state">Pilih game terlebih dahulu.</div></div>
+          <label for="payment">Metode pembayaran</label>
+          <select id="payment"><option value="">Pilih metode pembayaran</option><option value="QRIS">QRIS (atur di backend)</option><option value="Transfer Bank">Transfer Bank (atur di backend)</option><option value="E-Wallet">E-Wallet (atur di backend)</option></select>
+          <button class="submit-btn" id="orderButton">Buat pesanan <span>→</span></button>
+          <p class="fine-print">Demo antarmuka. Tombol ini belum memproses pembayaran sungguhan.</p>
+        </div>
+        <aside class="panel summary-panel">
+          <div class="summary-title">RINGKASAN PESANAN <span>✦</span></div>
+          <div class="summary-product" id="summaryProduct"><div class="summary-symbol">N</div><div><strong>Belum ada produk</strong><small>Pilih game dan nominal</small></div></div>
+          <div class="summary-line"><span>Player ID</span><strong id="summaryId">—</strong></div>
+          <div class="summary-line"><span>Nominal</span><strong id="summaryPackage">—</strong></div>
+          <div class="summary-line"><span>Pembayaran</span><strong id="summaryPayment">—</strong></div>
+          <div class="total-line"><span>Total</span><strong id="summaryPrice">Rp0</strong></div>
+          <div class="secure-note">◇ Pastikan User ID benar sebelum melanjutkan.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="how-section" id="cara">
+      <div class="eyebrow">LANGKAH MUDAH</div><h2>Cara top up</h2>
+      <div class="steps">
+        <article><b>01</b><h3>Pilih game</h3><p>Pilih produk yang ingin kamu isi.</p></article>
+        <article><b>02</b><h3>Isi data</h3><p>Masukkan Player ID dan pilih nominal.</p></article>
+        <article><b>03</b><h3>Buat pesanan</h3><p>Periksa ringkasan sebelum pembayaran diproses.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer id="bantuan"><a class="brand" href="#"><span class="brand-mark">N</span><span>NOVA<span class="brand-light">TOPUP</span></span></a><span>© 2026 NOVA TOPUP · Template storefront</span><a href="mailto:admin@example.com">Hubungi admin</a></footer>
+
+  <dialog id="orderDialog" class="dialog">
+    <div class="dialog-icon">✓</div><h2>Pesanan disiapkan</h2>
+    <p id="dialogText"></p>
+    <p class="dialog-warning">Ini hanya simulasi. Hubungkan backend dan payment gateway sebelum menerima pembayaran nyata.</p>
+    <button class="submit-btn" id="closeDialog">Mengerti</button>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
